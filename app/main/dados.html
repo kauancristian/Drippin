@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Drippin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Assistant:wght@200..800&family=Bangers&family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Love+Ya+Like+A+Sister&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Passion+One:wght@400;700;900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html{
+            overflow-x: hidden;
+        }
+
+        .bebas{
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .rock{
+            font-family: "Rock Salt", cursive;
+        }
+
+        p, li{
+            font-family: "Montserrat", sans-serif;
+        }
+
+        #sec1{
+            background: url(assets/bg.webp) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nav-bar{
+            position: relative;
+            display: inline-flex;
+        }
+
+        .nav-bar::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 1px;
+            background-origin: center;
+            background-color: #ff4500;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .nav-bar:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="sec1" class="h-[100vh]">
+
+        <div>
+            <header class="bg-black p-5 z-[500] relative flex items-center lg:justify-between shadow-xl">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="rock bg-gradient-to-br from-[#ff4500] to-orange-500 bg-clip-text text-transparent text-2xl absolute">DRIPPIN</h1>
+                </div>
+                <!-- Itens menu -->
+                <div id="menu">
+                    <nav class="text-sm">
+                        <ul class="lg:flex text-gray-200 lg:space-x-5">
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Camisetas</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Bermudas e Shorts</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Calças</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Jaquetas</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Tênis</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Acessórios</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Esportes</li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Search and Car -->
+                <div class="text-gray-200 flex items-centerrelative">
+                    <div class="flex translate-x-[-50px] relative">
+                        <i class="bi bi-bag cursor-pointer hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811 bg-clip-text hover:text-transparent transition ease-in-out duration-300"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Carrossel -->
+            <div>
+                
+            </div>
+        </div>
+
+        <!-- Inf sec1 -->
+         <div class="flex flex-col items-center text-center h-[85vh] lg:h-[89vh] justify-center z-[5000] relative">
+            <div class="">
+                <h1 class="bebas text-6xl lg:text-9xl bg-gradient-to-br from-gray-300 to-gray-200 to-gray-500 bg-clip-text text-transparent drop-shadow-[0_0_2px_gray]">VIVER COM <spa class="bg-gradient-to-br from-[#ff4500] to-orange-500 bg-clip-text text-transparent">ESTILO</span></h1>
+                <p class="text-white lg:w-[600px] mx-auto text-sm sm:text-lg px-10 lg:px-0 pt-5 lg:pt-0">Estilo nas ruas, atitude em cada peça.
+                Vista a liberdade, carregue sua essência e faça das ruas sua passarela. Nossa coleção traz conforto, autenticidade e tendências que respiram o espírito urbano.</p>
+                <div class="translate-y-6 space-y-4">
+                    <button id="btnSpecial" class="flex items-center space-x-3 py-4 w-[220px] lg:w-[200px] text-[#ffffff] border border-gray-500 bg-[#262626] text-center justify-center mx-auto text-sm hover:text-white">
+                        <p>Começe á Comprar</p>
+                        <i class="bi bi-bag-fill"></i>
+                    </button>
+                    <div class="translate-y-6">
+                        <div id="seta">
+                            <i class="bi bi-arrow-down text-gray-200 text-xl"></i>
+                        </div>
+                    </div>
+
+                    <style>
+                        #btnSpecial{
+                            position: relative;
+                            overflow: hidden;
+                            z-index: 1;
+                        }
+
+                        #btnSpecial::after{
+                            content: "";
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            left: -100%;
+                            top: 0;
+                            background-image: linear-gradient(#ff4500, #FA6811);
+                            transition: left 0.4s ease-in-out;
+                            z-index: -1;
+                        }
+
+                        #btnSpecial:hover::after{
+                            left: 0;
+                        }
+
+                        @keyframes setaMovie {
+                            0%{
+                                transform: translateY(10px);
+                            }
+
+                            50%{    
+                                transform: translateY(0px);    
+                            }
+
+                            100%{    
+                                transform: translateY(10px);    
+                            }
+                        }
+
+                        #seta{
+                            animation: setaMovie 0.6s ease-in-out infinite;
+                        }
+                    </style>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- Sec 2 -->
+     <div class="px-7 mt-7 font-bold">
+        <div class="pb-10">
+            <p class="text-2xl">Os mais pedidos</p>
+            <span class="bg-black h-0.5 w-[100px] block"></span>
+        </div>
+     </div>
+</body>
+</html>

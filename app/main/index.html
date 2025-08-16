@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Drippin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Assistant:wght@200..800&family=Bangers&family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Love+Ya+Like+A+Sister&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Passion+One:wght@400;700;900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html{
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .bebas{
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .rock{
+            font-family: "Rock Salt", cursive;
+        }
+
+        p, li{
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .nav-bar{
+            position: relative;
+            display: inline-flex;
+        }
+
+        .nav-bar::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 1px;
+            background-origin: center;
+            background-color: #ff4500;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .nav-bar:hover::after{
+            width: 100%;
+        }
+
+        .fade-img {
+            transition: opacity 0.4s ease;
+        }
+
+        body.modal-open {
+        overflow-y: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="sec1" class="h-[100vh] relative overflow-hidden">
+        <!-- Shadow -->
+        <div class="bg-black inset-0 opacity-60 absolute z-50 h-[100vh]"></div>
+        <div>
+            <header class="bg-black p-5 z-[9999] relative flex items-center lg:justify-between shadow-xl">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="rock bg-gradient-to-br from-[#ff4500] to-orange-500 bg-clip-text text-transparent text-2xl absolute">DRIPPIN</h1>
+                </div>
+                <!-- Itens menu -->
+                <div id="menu">
+                    <nav class="text-sm">
+                        <ul class="lg:flex text-gray-200 lg:space-x-5">
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Camisetas</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Bermudas e Shorts</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Calças</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Jaquetas</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Tênis</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Acessórios</li>
+                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Esportes</li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Car -->
+                <div class="text-gray-200 flex items-centerrelative">
+                    <div class="flex translate-x-[-50px] relative">
+                        <i class="bi bi-bag cursor-pointer hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811 hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Conteúdo -->
+            <div class="absolute inset-0 flex items-center justify-center z-[500]">
+                <div class="z-[500] flex flex-col justify-center items-center text-center mt-10">
+                    <h1 class="bebas text-6xl lg:text-8xl bg-gradient-to-br from-gray-300 to-gray-200 to-gray-500 bg-clip-text text-transparent drop-shadow-[0_0_2px_gray]">VIVER COM <spa class="bg-gradient-to-br from-[#ff4500] to-orange-500 bg-clip-text text-transparent">ESTILO</span></h1>
+                    <p class="text-white lg:w-[600px] mx-auto text-sm sm:text-[18px] px-10 lg:px-0 pt-5 lg:pt-0">Estilo nas ruas, atitude em cada peça.
+                    Vista a liberdade, carregue sua essência e faça das ruas sua passarela. Nossa coleção traz conforto, autenticidade e tendências que respiram o espírito urbano.</p>
+                    <div class="translate-y-6 space-y-4">
+                        <a href="#sec2">
+                            <button id="btnSpecial" class="flex items-center space-x-3 py-4 w-[220px] lg:w-[200px] text-[#ffffff] border border-gray-500 bg-[#262626] text-center justify-center mx-auto text-sm hover:text-white">
+                                <p>Começe á Comprar</p>
+                                <i class="bi bi-bag-fill"></i>
+                            </button>
+                        </a>
+                        <div class="translate-y-6">
+                            <div id="seta">
+                                <i class="bi bi-arrow-down text-gray-200 text-xl"></i>
+                            </div>
+                        </div>
+
+                    <style>
+                        #btnSpecial{
+                            position: relative;
+                            overflow: hidden;
+                            z-index: 1;
+                        }
+
+                        #btnSpecial::after{
+                            content: "";
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            left: -100%;
+                            top: 0;
+                            background-image: linear-gradient(#ff4500, #FA6811);
+                            transition: left 0.4s ease-in-out;
+                            z-index: -1;
+                        }
+
+                        #btnSpecial:hover::after{
+                            left: 0;
+                        }
+
+                        @keyframes setaMovie {
+                            0%{
+                                transform: translateY(10px);
+                            }
+
+                            50%{    
+                                transform: translateY(0px);    
+                            }
+
+                            100%{    
+                                transform: translateY(10px);    
+                            }
+                        }
+
+                        #seta{
+                            animation: setaMovie 0.6s ease-in-out infinite;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+            <!-- Carrossel -->
+            <div id="carrossel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide ">
+                <img class="w-screen h-[100vh] flex-shrink-0 snap-center" src="assets/bg.webp" alt="">
+                <img class="w-screen h-[100vh] flex-shrink-0 snap-center" src="assets/bg-2.webp" alt="">
+                <img class="w-screen h-[100vh] flex-shrink-0 snap-center" src="assets/bg-3.webp" alt="">
+            </div>
+        </div>
+
+        <script>
+            const carrossel = document.getElementById("carrossel");
+            let scrollAmount = 0;
+            const interval = 3000;
+
+            setInterval(() => {
+                const itemWidth = carrossel.children[0].offsetWidth;
+
+                if(scrollAmount >= carrossel.scrollWidth - carrossel.clientWidth) {
+                    scrollAmount = 0;
+                } else{
+                    scrollAmount += itemWidth;
+                }
+
+                carrossel.scrollTo({
+                    left: scrollAmount,
+                    behavior: "smooth"
+                });
+            }, interval);
+        </script>
+    </div>
+
+    <!-- Sec 2 -->
+     <div id="sec2" class="px-7 pb-10 bg-gray-200 pt-10 shadow-xl">
+        <div class="pb-10">
+            <p class="text-2xl font-bold">Os mais pedidos</p>
+            <span class="bg-black h-0.5 w-[100px] block"></span>
+        </div>
+        
+        <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-6 w-[90%] lg:w-full mx-auto">
+            <!-- Elemento 1 -->
+            <div class="mx-auto">
+                <img id="elemento1" class="w-full h-[400px] object-contain cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 1.webp" alt="">
+                <div class="pt-3 space-y-1 text-[13px]">
+                    <p>Camisa Streetwear Prison Logo</p>
+                    <div class="flex items-center space-x-4">
+                        <p class="line-through">R$ 169,90  </p>
+                        <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
+                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal1" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
+                    <img id="modal-img" src="assets/maisComprados/elemnto - 1.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
+                </div>
+
+            </div>
+
+            <!-- Elemento 2 -->
+            <div class="mx-auto">
+                <img id="elemento2" class="w-full h-[400px] object-fit cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 2.webp" alt="">
+                <div class="pt-3 space-y-1 text-[13px]">
+                    <p>Camisa Streetwear Prison Sport Club Premium</p>
+                    <div class="flex items-center space-x-4">
+                        <p class="line-through">R$ 189,90  </p>
+                        <p class="text-[#3BBE0F] font-bold">R$ 119,64</p>
+                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">37%</p>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal2" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
+                    <img id="modal-img" src="assets/maisComprados/elemnto - 2.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
+                </div>
+
+            </div>
+
+            <!-- Elemento 3 -->
+            <div class="mx-auto">
+                <img id="elemento3" class="w-full h-[400px] object-contain cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 3.webp" alt="">
+                <div class="pt-3 space-y-1 text-[13px]">
+                    <p>Camisa Streetwear Prison Logo</p>
+                    <div class="flex items-center space-x-4">
+                        <p class="line-through">R$ 169,90  </p>
+                        <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
+                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal3" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
+                    <img id="modal-img" src="assets/maisComprados/elemnto - 3.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
+                </div>
+
+
+            </div>
+
+
+            <!-- Elemento 4 -->
+            <div class="mx-auto">
+                <img id="elemento4" class="w-full h-[400px] object-contain cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 4.webp" alt="">
+                <div class="pt-3 space-y-1 text-[13px]">
+                    <p>Camisa Streetwear Prison Logo</p>
+                    <div class="flex items-center space-x-4">
+                        <p class="line-through">R$ 169,90  </p>
+                        <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
+                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+                <div id="modal4" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
+                    <img id="modal-img" src="assets/maisComprados/elemnto - 4.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
+                </div>
+
+        </div>
+     </div>
+
+     <!-- Script Mais comprados -->
+     <script>
+        ["1","2","3","4"].forEach(i => {
+            const el = document.getElementById(`elemento${i}`);
+            const modal = document.getElementById(`modal${i}`);
+
+            el.onmouseenter = () => {
+                el.style.opacity = 0;
+                setTimeout(() => {
+                el.src = `assets/maisComprados/hover - ${i}.webp`;
+                el.style.opacity = 1;
+                }, 200); 
+            };
+
+            el.onmouseleave = () => {
+                el.style.opacity = 0;
+                setTimeout(() => {
+                el.src = `assets/maisComprados/elemnto - ${i}.webp`;
+                el.style.opacity = 1;
+                }, 200);
+            };
+
+            el.onclick = () => { 
+                modal.classList.remove('hidden');
+                document.body.style.overflowY = "hidden";
+            }
+        });
+
+     </script>
+</body>
+</html>
