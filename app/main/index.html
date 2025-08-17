@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <title>Drippin</title>
+    <title>Drippin | Roupas Streetwear</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Assistant:wght@200..800&family=Bangers&family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Love+Ya+Like+A+Sister&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Passion+One:wght@400;700;900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
         *{
@@ -60,6 +60,13 @@
         overflow-y: hidden;
         }
 
+        #carrosselLancamentos{
+            scrollbar-width: none;
+        }
+
+        #carrosselLancamentos::-webkit-scrollbar{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -67,29 +74,15 @@
         <!-- Shadow -->
         <div class="bg-black inset-0 opacity-60 absolute z-50 h-[100vh]"></div>
         <div>
-            <header class="bg-black p-5 z-[9999] relative flex items-center lg:justify-between shadow-xl">
+            <header class="fixed bg-black/80 p-5 z-[9999] w-screen flex items-center lg:justify-between shadow-xl">
                 <!-- Logo -->
                 <div class="flex items-center">
                     <h1 class="rock bg-gradient-to-br from-[#ff4500] to-orange-500 bg-clip-text text-transparent text-2xl absolute">DRIPPIN</h1>
                 </div>
-                <!-- Itens menu -->
-                <div id="menu">
-                    <nav class="text-sm">
-                        <ul class="lg:flex text-gray-200 lg:space-x-5">
-                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Camisetas</li>
-                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Bermudas e Shorts</li>
-                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Calças</li>
-                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Jaquetas</li>
-                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Tênis</li>
-                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Acessórios</li>
-                            <li class="cursor-pointer nav-bar hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811] hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300">Esportes</li>
-                        </ul>
-                    </nav>
-                </div>
                 <!-- Car -->
                 <div class="text-gray-200 flex items-centerrelative">
                     <div class="flex translate-x-[-50px] relative">
-                        <i class="bi bi-bag cursor-pointer hover:bg-gradient-to-br from-[#ff4500] to-[#FA6811 hover:bg-clip-text hover:text-transparent transition ease-in-out duration-300"></i>
+                        <i class="bi bi-bag cursor-pointer hover:text-[#FE4D04] transition ease-in-out duration-300 text-xl" ></i>
                     </div>
                 </div>
             </header>
@@ -160,9 +153,9 @@
 
             <!-- Carrossel -->
             <div id="carrossel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide ">
-                <img class="w-screen h-[100vh] flex-shrink-0 snap-center" src="assets/bg.webp" alt="">
-                <img class="w-screen h-[100vh] flex-shrink-0 snap-center" src="assets/bg-2.webp" alt="">
-                <img class="w-screen h-[100vh] flex-shrink-0 snap-center" src="assets/bg-3.webp" alt="">
+                <img class="w-screen h-[100vh] flex-shrink-0 snap-center object-cover" src="assets/bg.webp" alt="">
+                <img class="w-screen h-[100vh] flex-shrink-0 snap-center object-cover" src="assets/bg-2.webp" alt="">
+                <img class="w-screen h-[100vh] flex-shrink-0 snap-center object-cover" src="assets/bg-3.webp" alt="">
             </div>
         </div>
 
@@ -189,9 +182,9 @@
     </div>
 
     <!-- Sec 2 -->
-     <div id="sec2" class="px-7 pb-10 bg-gray-200 pt-10 shadow-xl">
-        <div class="pb-10">
-            <p class="text-2xl font-bold">Os mais pedidos</p>
+     <div id="sec2" class="px-7 pb-16 bg-gray-200 pt-10 shadow-xl">
+        <div class="pb-10 space-y-2">
+            <p class="text-2xl lg:text-4xl font-bold">Os mais pedidos</p>
             <span class="bg-black h-0.5 w-[100px] block"></span>
         </div>
         
@@ -199,82 +192,257 @@
             <!-- Elemento 1 -->
             <div class="mx-auto">
                 <img id="elemento1" class="w-full h-[400px] object-contain cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 1.webp" alt="">
-                <div class="pt-3 space-y-1 text-[13px]">
-                    <p>Camisa Streetwear Prison Logo</p>
-                    <div class="flex items-center space-x-4">
-                        <p class="line-through">R$ 169,90  </p>
-                        <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
-                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                <div class="pt-3 space-y-1">
+                    <div class="text-[13px]">
+                        <p>Camisa Streetwear Prison Logo</p>
+                        <div class="flex items-center space-x-4">
+                            <p class="line-through">R$ 169,90  </p>
+                            <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
+                            <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                        </div>
+                        <div class="pt-5 flex justify-end">
+                            <button class="bg-[#262626] text-white py-3 px-7 rounded-md hover:bg-black hover:translate-y-[-3px] transition ease-in-out duration-300">COMPRAR</button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Modal -->
-                <div id="modal1" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
-                    <img id="modal-img" src="assets/maisComprados/elemnto - 1.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
-                </div>
-
             </div>
 
             <!-- Elemento 2 -->
             <div class="mx-auto">
                 <img id="elemento2" class="w-full h-[400px] object-fit cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 2.webp" alt="">
-                <div class="pt-3 space-y-1 text-[13px]">
-                    <p>Camisa Streetwear Prison Sport Club Premium</p>
-                    <div class="flex items-center space-x-4">
-                        <p class="line-through">R$ 189,90  </p>
-                        <p class="text-[#3BBE0F] font-bold">R$ 119,64</p>
-                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">37%</p>
+                <div class="pt-3 space-y-1">
+                    <div class="text-[13px]">
+                        <p>Camisa Streetwear Prison Sport Club Premium</p>
+                        <div class="flex items-center space-x-4">
+                            <p class="line-through">R$ 189,90  </p>
+                            <p class="text-[#3BBE0F] font-bold">R$ 119,64</p>
+                            <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">37%</p>
+                        </div>
+                        <div class="pt-5 flex justify-end">
+                            <button class="bg-[#262626] text-white py-3 px-7 rounded-md hover:bg-black hover:translate-y-[-3px] transition ease-in-out duration-300">COMPRAR</button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Modal -->
-                <div id="modal2" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
-                    <img id="modal-img" src="assets/maisComprados/elemnto - 2.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
-                </div>
-
             </div>
 
             <!-- Elemento 3 -->
             <div class="mx-auto">
                 <img id="elemento3" class="w-full h-[400px] object-contain cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 3.webp" alt="">
-                <div class="pt-3 space-y-1 text-[13px]">
-                    <p>Camisa Streetwear Prison Logo</p>
-                    <div class="flex items-center space-x-4">
-                        <p class="line-through">R$ 169,90  </p>
-                        <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
-                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                <div class="pt-3 space-y-1">
+                    <div class="text-[13px]">
+                        <p>Camisa Streetwear Prison Logo</p>
+                        <div class="flex items-center space-x-4">
+                            <p class="line-through">R$ 169,90  </p>
+                            <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
+                            <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                        </div>
+                        <div class="pt-5 flex justify-end">
+                            <button class="bg-[#262626] text-white py-3 px-7 rounded-md hover:bg-black hover:translate-y-[-3px] transition ease-in-out duration-300">COMPRAR</button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Modal -->
-                <div id="modal3" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
-                    <img id="modal-img" src="assets/maisComprados/elemnto - 3.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
-                </div>
-
-
             </div>
 
 
             <!-- Elemento 4 -->
             <div class="mx-auto">
                 <img id="elemento4" class="w-full h-[400px] object-contain cursor-pointer transition ease-in-all duration-500 shadow-xl fade-img" src="assets/maisComprados/elemnto - 4.webp" alt="">
-                <div class="pt-3 space-y-1 text-[13px]">
-                    <p>Camisa Streetwear Prison Logo</p>
-                    <div class="flex items-center space-x-4">
-                        <p class="line-through">R$ 169,90  </p>
-                        <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
-                        <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                <div class="pt-3 space-y-1">
+                    <div class="text-[13px]">
+                        <p>Camisa Streetwear Prison Logo</p>
+                        <div class="flex items-center space-x-4">
+                            <p class="line-through">R$ 169,90  </p>
+                            <p class="text-[#3BBE0F] font-bold">R$ 98,54</p>
+                            <p class="font-bold bg-gradient-to-br from-[#ff4500] to-orange-500 p-1 rounded-full text-white">42%</p>
+                        </div>
+                        <div class="pt-5 flex justify-end">
+                            <button class="bg-[#262626] text-white py-3 px-7 rounded-md hover:bg-black hover:translate-y-[-3px] transition ease-in-out duration-300">COMPRAR</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Modal -->
-                <div id="modal4" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-1000">
-                    <img id="modal-img" src="assets/maisComprados/elemnto - 4.webp" alt="Imagem Ampliada" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
-                </div>
-
         </div>
      </div>
+
+     <!-- Sec 3 -->
+      <div id="sec3" class="bg-gradient-to-br from-black via-black to-[#FC590A]">
+        <div class="pb-10 px-7 pt-10 space-y-2">
+            <p class="text-2xl lg:text-4xl font-bold text-white">Lançamentos</p>
+            <span class="bg-white h-0.5 w-[100px] block"></span>
+        </div>
+
+        <div class="pt-16 pb-16">
+            <div class="grid lg:grid-cols-2">
+                <div class="flex items-center lg:px-10">
+                
+                <!-- Button Left -->
+                <div>
+                    <button id="btnLeft" class="bg-[#262626]/30 hover:bg-[#262626] transition ease-in-out duration-300 py-5 px-6 rounded-full">
+                    <i class="bi bi-chevron-left text-white"></i>
+                    </button>
+                </div>
+
+                <!-- Carrossel -->
+                <div id="carrosselLancamentos" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth mx-auto lg:w-[100%] h-96 w-[100%] rounded-md">
+                    
+                    <!-- Imagem 1 -->
+                    <div class="flex-shrink-0 snap-center w-[100%] h-full overflow-hidden group">
+                    <img class="object-contain w-full h-full group-hover:scale-105 transition ease-in-out duration-500 drop-shadow-[0_0_10px_orange]" src="assets/lancamentos/lancamento - 1.png" alt="">
+                    </div>
+
+                    <!-- Imagem 2 -->
+                    <div class="flex-shrink-0 snap-center w-[100%] h-full overflow-hidden group">
+                    <img class="object-contain w-full h-full group-hover:scale-105 transition ease-in-out duration-500 drop-shadow-[0_0_10px_purple]" src="assets/lancamentos/lancamento - 2.png" alt="">
+                    </div>
+
+                    <!-- Imagem 3 -->
+                    <div class="flex-shrink-0 snap-center w-[100%] h-full overflow-hidden group">
+                    <img class="object-contain w-full h-full group-hover:scale-105 transition ease-in-out duration-500 drop-shadow-[0_0_10px_pink]" src="assets/lancamentos/lancamento - 3.png" alt="">
+                    </div>     
+                </div>
+
+                <!-- Button Right -->
+                <div>
+                    <button id="btnRight" class="bg-[#262626]/30 hover:bg-[#262626] transition ease-in-out duration-300 py-5 px-6 rounded-full">
+                    <i class="bi bi-chevron-right text-white"></i>
+                    </button>
+                </div>
+
+                </div>
+
+                <!-- Inf Roupa -->
+                <div class="mx-auto flex flex-col text-start space-y-5 translate-y-[-50px]">
+                    <h1 id="titleRoupa" class="font-bold text-white text-5xl"></h1>
+                    <p id="describeRoupa" class="text-gray-300"></p>
+                    <!-- <div>
+                        <ul class="text-gray-300 flex space-x-5">
+                            <li class="border p-2 rounded-md cursor-pointer hover:bg-white hover:text-black transition ease-in-out duration-500">37</li>
+                            <li class="border p-2 rounded-md cursor-pointer hover:bg-white hover:text-black transition ease-in-out duration-500">38</li>
+                            <li class="border p-2 rounded-md cursor-pointer hover:bg-white hover:text-black transition ease-in-out duration-500">39</li>
+                            <li class="border p-2 rounded-md cursor-pointer hover:bg-white hover:text-black transition ease-in-out duration-500">40</li>
+                            <li class="border p-2 rounded-md cursor-pointer hover:bg-white hover:text-black transition ease-in-out duration-500">41</li>
+                        </ul>
+                    </div> -->
+                    <div class="flex lg:space-x-7">
+                        <div class="flex flex-col">
+                            <p class="text-gray-300">Preço:</p>
+                            <p id="preçoRoupa"  class="font-bold text-3xl text-white"></p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-gray-300">Disponibilidade:</p>
+                            <p id="disponibilidadeRoupa" class=""></p>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <button class="bg-white text-lg py-2 px-12 rounded-md font-semibold hover:text-white hover:bg-[#262626] border relative hover:translate-y-[-3px] transition ease-in-out duration-300 flex items space-x-3">
+                            <p>COMPRAR</p>
+                            <i class="bi bi-cart3 translate-y-[-1px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- img tenis -->
+       <div class="w-screen">
+        <div class="bg-black inset-0 absolute opacity-50 z-100"></div>
+            <img src="assets/tenisBg.jpeg" alt="">
+       </div>
+
+      <!-- Script Carrossel Lançamentos -->
+        <script>
+
+        const lancamentos = [{
+            title: "Tênis Air Jordan 3 Retrô \"Starfish\" ",
+            describe: "Arrasar é fácil. O mais novo Air Jordan 3 traz uma nova cor para ela, projetada para se destacar por baixo. Toques de laranja nos remetem à camisa que MJ usou em um jogo de exibição arrasador na Itália, enquanto o cabedal neutro se integra perfeitamente aos looks do dia a dia.",
+            preco: "R$ 575,90",
+            disponibilidade: "<p class='text-[#3BBE0F]'>Em estoque</p>",
+        },
+
+        {
+            title: "Camiseta Prison Streetwear NY Branca Listrada",
+            describe: "Inspirada nos uniformes clássicos do baseball americano, essa camiseta Prison entrega o streetwear com referência direta à cena de Nova York. Um drop que mistura, estilo oversized e um visual marcante.",
+            preco: "R$ 209,99",
+            disponibilidade: "<p class='text-[#EAB308]'>Poucas unidades</p>",
+        }, 
+
+        {
+            title: "Camiseta Streetwear Prison Grime time",
+            describe: "A Camiseta Streetwear Prison Grime Time, uma peça de destaque que combina o estilo urbano e vibrante. Essa camiseta é perfeita para os amantes da música e da cultura streetwear. A camiseta Streetwear Prison Grime Time é uma peça de roupa moderna e estilosa.",
+            preco: "R$ 179,99",
+            disponibilidade: "<p class='text-red-500'>Esgotado</p>",
+        }
+    ];
+
+        //Contador pra troca de informações
+        let currentIndex = 0;
+
+        const titleRoupa = document.getElementById("titleRoupa");
+        const describeRoupa = document.getElementById("describeRoupa");
+        const preçoRoupa = document.getElementById("preçoRoupa");
+        const disponibilidadeRoupa = document.getElementById("disponibilidadeRoupa");
+
+        //Já inicia aqui as informações, puxando do object 0
+        titleRoupa.innerHTML = lancamentos[currentIndex].title;
+        describeRoupa.innerHTML = lancamentos[currentIndex].describe;
+        preçoRoupa.innerHTML = lancamentos[currentIndex].preco;
+        disponibilidadeRoupa.innerHTML = lancamentos[currentIndex].disponibilidade;
+
+        const carrosselLancamentos = document.getElementById("carrosselLancamentos");
+        const btnLeft = document.getElementById("btnLeft");
+        const btnRight = document.getElementById("btnRight");
+
+        const itemWidthLancamentos = carrosselLancamentos.children[0].offsetWidth;
+        let scrollAmount2 = 0;
+
+        //sec 3
+        const sec3 = document.getElementById("sec3");
+
+        btnRight.onclick = () => {
+            if (scrollAmount2 >= carrosselLancamentos.scrollWidth - carrosselLancamentos.clientWidth) {
+            scrollAmount2 = 0; 
+            } else {
+            scrollAmount2 += itemWidthLancamentos;
+            }
+            carrosselLancamentos.scrollTo({ left: scrollAmount2, behavior: "smooth" });
+
+            if(currentIndex >= 2) {
+                currentIndex = -1;
+            }
+
+            currentIndex++;
+            console.log(currentIndex);
+
+            titleRoupa.innerHTML = lancamentos[currentIndex].title;
+            describeRoupa.innerHTML = lancamentos[currentIndex].describe;
+            preçoRoupa.innerHTML = lancamentos[currentIndex].preco;
+            disponibilidadeRoupa.innerHTML = lancamentos[currentIndex].disponibilidade;
+            
+        };
+
+        btnLeft.onclick = () => {
+            if (scrollAmount2 <= 0) {
+            scrollAmount2 = carrosselLancamentos.scrollWidth - carrosselLancamentos.clientWidth;
+            } else {
+            scrollAmount2 -= itemWidthLancamentos;
+            }
+            carrosselLancamentos.scrollTo({ left: scrollAmount2, behavior: "smooth" });
+            
+            if(currentIndex == 0) {
+                currentIndex += 3;
+            }
+
+            currentIndex--;
+            console.log(currentIndex);
+
+            titleRoupa.innerHTML = lancamentos[currentIndex].title;
+            describeRoupa.innerHTML = lancamentos[currentIndex].describe;
+            preçoRoupa.innerHTML = lancamentos[currentIndex].preco;
+            disponibilidadeRoupa.innerHTML = lancamentos[currentIndex].disponibilidade;
+        };
+       
+        </script>
+
 
      <!-- Script Mais comprados -->
      <script>
@@ -298,10 +466,10 @@
                 }, 200);
             };
 
-            el.onclick = () => { 
-                modal.classList.remove('hidden');
-                document.body.style.overflowY = "hidden";
-            }
+            // el.onclick = () => { 
+            //     modal.classList.remove('hidden');
+            //     document.body.style.overflowY = "hidden";
+            // }
         });
 
      </script>
